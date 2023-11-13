@@ -1,0 +1,105 @@
+:root {
+  --Dark_cyan: hsl(185, 75%, 39%);
+  --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+  --Dark_grayish_blue: hsl(227, 10%, 46%);
+  --Dark_gray: hsl(0, 0%, 59%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--Dark_cyan);
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 40vh, left 52vw top 48vh;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  height: 37.2rem;
+  overflow: hidden;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.4);
+}
+.card-header {
+  height: 14rem;
+  background-image: url(../images/bg-pattern-card.svg);
+  background-size: cover;
+}
+.card-body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-5rem);
+}
+.card-body-boximg {
+  border-radius: 50%;
+  width: 9rem;
+  height: 9rem;
+  border: 0.3rem solid #fcf8f8;
+  background-image: url(../images/Foto.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.card-body-nombre {
+  margin-top: 2.5rem;
+  color: var(--Very_dark_desaturated_blue);
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.card-body-nombre span {
+  margin-left: 0.8rem;
+  color: var(--Dark_grayish_blue);
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.card-body-pais {
+  margin-top: 0.9rem;
+  font-weight: 400;
+  color: var(--Dark_gray);
+}
+.card-body-linea {
+  margin-top: 2.8rem;
+  width: 100%;
+  border-top: 0.1rem solid #ebe2e2;
+}
+.card-body-estadisticas {
+  display: inherit;
+  padding: 2.1rem 1.8rem;
+}
+.card-body-estadisticas-container {
+  padding: 0 2rem;
+  display: inherit;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.card-body-estadisticas-container span {
+  padding-top: 0.6rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  color: var(--Dark_gray);
+}/*# sourceMappingURL=style.css.map */
